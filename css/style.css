@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+  body header,
+  body footer {
+    flex: none;
+    padding: 1.5em;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: #fff;
+    border-bottom: 4px solid #000;
+    positiion: relative; }
+    body header h1,
+    body footer h1 {
+      letter-spacing: 2px;
+      text-shadow: 0px 0px 6px #000; }
+  body main {
+    flex: 1 0 auto;
+    padding: var(--space) var(--space) 0;
+    width: 100%; }
+    body main #board {
+      margin: 10px auto;
+      width: 100%;
+      max-width: 800px;
+      padding: 10px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      position: relative; }
+      body main #board .create-column {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        padding: 10px; }
+      body main #board .column-container .column {
+        width: 30%;
+        float: left;
+        border: 1px solid #000;
+        border-radius: 2px;
+        margin: 1%;
+        padding: 1%;
+        position: relative;
+        background: white; }
+        body main #board .column-container .column h2 {
+          padding: 0;
+          margin-bottom: 5px; }
+        body main #board .column-container .column .btn-delete {
+          position: absolute;
+          top: -5px;
+          right: -5px; }
+        body main #board .column-container .column .btn-edit {
+          position: absolute;
+          top: -5px;
+          right: 20px; }
+        body main #board .column-container .column .btn-add-card {
+          position: absolute;
+          top: -5px;
+          right: 59px; }
+        body main #board .column-container .column .column-card-list {
+          height: 100%;
+          min-height: 25px;
+          border-top: 1px solid #000;
+          list-style: none;
+          padding: 0;
+          margin: 0; }
+          body main #board .column-container .column .column-card-list .card-placeholder {
+            background: red; }
+          body main #board .column-container .column .column-card-list .card,
+          body main #board .column-container .column .column-card-list .card-placeholder {
+            width: 100%;
+            min-height: 25px;
+            border-radius: 2px;
+            margin: 10px 0;
+            padding: 1%;
+            border: 1px solid #000;
+            position: relative;
+            background: rgba(0, 0, 0, 0.1); }
+            body main #board .column-container .column .column-card-list .card button,
+            body main #board .column-container .column .column-card-list .card-placeholder button {
+              position: absolute;
+              top: -5px;
+              right: -5px; }
+            body main #board .column-container .column .column-card-list .card .btn-edit,
+            body main #board .column-container .column .column-card-list .card-placeholder .btn-edit {
+              position: absolute;
+              top: -5px;
+              right: 20px; }
+            body main #board .column-container .column .column-card-list .card p,
+            body main #board .column-container .column .column-card-list .card-placeholder p {
+              width: 100%;
+              height: 100%;
+              padding: 20px 5px 5px;
+              margin: 0; }
+
+@media (max-width: 600px) {
+  body main #board .column-container .column {
+    width: 99%; } }
+
+/*# sourceMappingURL=style.css.map */

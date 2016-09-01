@@ -1,0 +1,93 @@
+/* line 1, C:/Projekty/OOP/sass/style.sass */
+* {
+  box-sizing: border-box; }
+
+/* line 3, C:/Projekty/OOP/sass/style.sass */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+  /* line 11, C:/Projekty/OOP/sass/style.sass */
+  body header,
+  body footer {
+    flex: none;
+    padding: 1.5em;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: #fff;
+    border-bottom: 4px solid #000;
+    positiion: relative; }
+    /* line 19, C:/Projekty/OOP/sass/style.sass */
+    body header h1,
+    body footer h1 {
+      letter-spacing: 2px;
+      text-shadow: 0px 0px 6px #000; }
+  /* line 22, C:/Projekty/OOP/sass/style.sass */
+  body main {
+    flex: 1 0 auto;
+    padding: var(--space) var(--space) 0;
+    width: 100%; }
+    /* line 26, C:/Projekty/OOP/sass/style.sass */
+    body main > div {
+      margin: 10px auto;
+      width: 100%;
+      max-width: 800px;
+      padding: 10px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+      overflow: hidden; }
+      /* line 33, C:/Projekty/OOP/sass/style.sass */
+      body main > div .column {
+        width: 30%;
+        float: left;
+        border: 1px solid #000;
+        border-radius: 2px;
+        margin: 1%;
+        padding: 1%;
+        position: relative; }
+        /* line 41, C:/Projekty/OOP/sass/style.sass */
+        body main > div .column .btn-delete {
+          position: absolute;
+          top: -5px;
+          right: -5px; }
+        /* line 45, C:/Projekty/OOP/sass/style.sass */
+        body main > div .column .btn-add-card {
+          position: absolute;
+          top: -5px;
+          right: 20px; }
+        /* line 49, C:/Projekty/OOP/sass/style.sass */
+        body main > div .column .column-card-list {
+          height: 100%;
+          border-top: 1px solid #000;
+          list-style: none;
+          padding: 0;
+          margin-bottom: 0; }
+          /* line 55, C:/Projekty/OOP/sass/style.sass */
+          body main > div .column .column-card-list .card-placeholder {
+            background: red; }
+          /* line 58, C:/Projekty/OOP/sass/style.sass */
+          body main > div .column .column-card-list .card,
+          body main > div .column .column-card-list .card-placeholder {
+            width: 100%;
+            border-radius: 2px;
+            margin: 10px 0;
+            padding: 1%;
+            border: 1px solid #000;
+            position: relative; }
+            /* line 65, C:/Projekty/OOP/sass/style.sass */
+            body main > div .column .column-card-list .card button,
+            body main > div .column .column-card-list .card-placeholder button {
+              position: absolute;
+              top: -5px;
+              right: -5px; }
+            /* line 69, C:/Projekty/OOP/sass/style.sass */
+            body main > div .column .column-card-list .card p,
+            body main > div .column .column-card-list .card-placeholder p {
+              width: 100%;
+              height: 100%;
+              padding: 5px;
+              margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
